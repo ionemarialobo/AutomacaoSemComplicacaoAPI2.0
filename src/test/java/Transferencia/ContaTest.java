@@ -46,7 +46,6 @@ class ContaTest {
 
         assertEquals(xuxa, contaXuxa.getProprietario());
 
-
     }
     @Test
      @DisplayName("Validar numero da Agencia = 0025")
