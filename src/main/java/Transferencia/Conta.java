@@ -18,23 +18,18 @@ public class Conta {
     public String getAgencia() {
         return agencia;
     }
-
     public String getNumeroConta() {
         return numeroConta;
     }
-
     public double getSaldo() {
         return saldo;
     }
-
     public Cliente getProprietario() {
         return proprietario;
     }
-
     public void realizarDeposito(double valor) {
         saldo += valor;
     }
-
     public boolean realizarSaque(double valor) {
         if (valor > saldo) {
             return false;
