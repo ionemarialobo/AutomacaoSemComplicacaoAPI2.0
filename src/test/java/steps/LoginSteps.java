@@ -34,4 +34,11 @@ public class LoginSteps {
         LoginMap.getLogin().putAll(map);
     }
 
+    @Dado("que tenha realizado o login com dados validos")
+    public void queTenhaRealizadoOLoginComDadosValidos() {
+        queTenhaUmPayloadValidoDaAPIDeLogin();
+        envioUmaRequisicaoDoTipoPOSTDeLogin();
+        armazenoOTokenQueReceboDoResponseDeLogin();
+    }
+
 }
